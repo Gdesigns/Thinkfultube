@@ -48,6 +48,9 @@ body {font-family: 'Open Sans Condensed', sans-serif;}
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 }
+.mySearch:hover {
+	background: #464646;
+}
 #search-results {
 	display: none;
     width: 90%;
