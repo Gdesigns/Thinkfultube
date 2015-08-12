@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {margin: 0; padding: 0;}
+*, *:after, *:before {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.group:after {content: ""; display: table; clear: both;}
+.clear {clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;}
+
+body {font-family: 'Open Sans Condensed', sans-serif;}
+
+#wrapper {
+	display: block;
+	width: 75%;
+	margin: 2% auto;
+}
+#logo {
+	display: block;
+	width: 25%;
+	margin: 0 auto;
+}
+#logo img {
+	width: 100%;
+	height: auto;
+}
+.intro {
+	display: block;
+	text-align: center;
+	padding: 2% 0;
+}
+#query {
+	display: block;
+	padding: 5px;
+	border: 1px solid #e1e1e1;
+	width: 50%;
+	margin: 0 auto;
+}
+.mySearch {
+	display: block;
+	margin: 8px auto 2%;
+	width: 20%;
+	padding: 10px;
+	background: #ed1c24;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 1.25em;
+	border-radius: 5px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+}
+#search-results {
+	display: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    background: #fae5a3;
+    border-radius: 10px;
+    border: 5px solid #e36c23;
+}
+#search-results li {
+	display: inline-block;
+	vertical-align: top;
+    width: 33.3333%;
+    padding: 2%;
+}
+#search-results li img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+#search-results p {
+	font-weight: 700;
+	color: #567968;
+}
+
+@media screen and (min-width: 1024px) {
+
+#wrapper {
+	display: block;
+	width: 960px;
+}
+
+}
+
+@media screen and (max-width: 960px) {
+
+#search-results li {
+    width: 50%;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+
+#search-results {
+	padding: 5%;
+}
+
+#search-results li {
+    display: block;
+    margin: 5% auto 0;
+    width: 100%;
+    padding: 0;
+}
+#search-results li:first-child {
+	margin: 0 auto;
+}
+
+}
